@@ -156,6 +156,9 @@ margin-left: 50px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    display: flex;
+    align-items: center;
 }
 
 .nav-contacts .link:hover,
@@ -252,7 +255,7 @@ margin-right: var(--list-gap);
 }
 
 .features-title {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 
     color: var(--color-primery);
     font-weight: 700;
@@ -367,7 +370,7 @@ margin-bottom: 16px;
 
 .social-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .social-link {
@@ -456,6 +459,7 @@ footer {
 
 .footer-flex {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-contacts {
@@ -506,7 +510,6 @@ color: var(--color-blue);
 }
 
 .footer-title {
-    margin-top: 12px;
     margin-bottom: 20px;
 
 font-weight: 700;
@@ -555,17 +558,15 @@ border: 1px solid transparent;
     text-align: center;
     letter-spacing: 0.03em;
     border-radius: 4px;
+
+    cursor: pointer;
 }
 
 .button-filters:active,
 .button-filters:hover,
 .button-filters:focus {
-padding: 6px 20px;
-border: var(--color-blue);
-
 color: var(--color-white);
 background-color: var(--color-blue);
-cursor: pointer;
 
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -590,9 +591,9 @@ margin-left: var(--list-gap);
 margin-top: var(--list-gap);
 }
 
-.project-list .item:hover {
-    border: 1px solid #EEEEEE;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.project-list .item:hover,
+.project-list .item:focus {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-content {
